@@ -27,7 +27,7 @@ char	*ft_gnl_strjoin(char *s1, char *s2);
 size_t	ft_strlen(char *str);
 char	*ft_strdup(char *str);
 char	*ft_strchr(char *s, int c);
-char	*ft_substr(char *s, int start, int end);
+char	*ft_substr(char *s, size_t start, size_t end);
 size_t	ft_get_len(size_t len, size_t start, size_t s_len);
 
 #endif

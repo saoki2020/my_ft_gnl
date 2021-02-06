@@ -65,7 +65,6 @@ char	*ft_read_char(int fd, char **remainder, int *read_num)
 	{
 		buf = *remainder;
 		*remainder = NULL;
-	//	*read_num = 1;
 	}
 	return (buf);
 }

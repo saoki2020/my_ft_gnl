@@ -58,7 +58,7 @@ char	*ft_strchr(char *s, int c)
 	return (NULL);
 }
 
-char	*ft_substr(char *s, int start, int end)
+char	*ft_substr(char *s, size_t start, size_t end)
 {
 	char	*str;
 	size_t	i;
