@@ -6,7 +6,7 @@
 /*   By: saoki <saoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 22:29:29 by saoki             #+#    #+#             */
-/*   Updated: 2021/02/06 06:03:19 by saoki            ###   ########.fr       */
+/*   Updated: 2021/02/06 23:03:12 by saoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ char	*ft_substr(char *s, size_t start, size_t end)
 		while (i < end && (start + i) < s_len)
 		{
 			str[i] = s[start + i];
-				i++;
+			i++;
 		}
 	}
 	str[i] = '\0';

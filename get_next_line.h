@@ -6,7 +6,7 @@
 /*   By: saoki <saoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/06 06:03:40 by saoki             #+#    #+#             */
-/*   Updated: 2021/02/06 06:07:34 by saoki            ###   ########.fr       */
+/*   Updated: 2021/02/06 23:04:37 by saoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
 
 # define MAX_FD 1024
 
-int	get_next_line(int fd, char **line);
+int		get_next_line(int fd, char **line);
 char	*ft_read_char(int fd, char **remainder, int *read_num);
-int	ft_rewrite_line(char *temp, char **remainder, char **line);
+int		ft_rewrite_line(char *temp, char **remainder, char **line);
 char	*ft_gnl_strjoin(char *s1, char *s2);
 size_t	ft_strlen(char *str);
 char	*ft_strdup(char *str);
