@@ -6,7 +6,7 @@
 /*   By: saoki <saoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/06 06:03:40 by saoki             #+#    #+#             */
-/*   Updated: 2021/02/06 23:04:37 by saoki            ###   ########.fr       */
+/*   Updated: 2021/02/06 23:17:09 by saoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <unistd.h>
 # include <stdio.h>
 
-# define MAX_FD 1024
+# define MAX_FD 256
 
 int		get_next_line(int fd, char **line);
 char	*ft_read_char(int fd, char **remainder, int *read_num);
