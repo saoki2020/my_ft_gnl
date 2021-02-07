@@ -6,7 +6,7 @@
 /*   By: saoki <saoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/04 23:26:03 by saoki             #+#    #+#             */
-/*   Updated: 2021/02/06 23:09:59 by saoki            ###   ########.fr       */
+/*   Updated: 2021/02/07 12:52:20 by saoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,8 +105,7 @@ char	*ft_gnl_strjoin(char *s1, char *s2)
 	j = 0;
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	str = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
-	if (str == NULL)
+	if (!(str = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1)))
 		return (NULL);
 	while (s1[i])
 	{
@@ -120,5 +119,7 @@ char	*ft_gnl_strjoin(char *s1, char *s2)
 		j++;
 	}
 	str[i] = '\0';
+	free(s1);
+	s1 = NULL;
 	return (str);
 }
