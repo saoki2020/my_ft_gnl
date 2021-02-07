@@ -6,7 +6,7 @@
 /*   By: saoki <saoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/04 23:26:03 by saoki             #+#    #+#             */
-/*   Updated: 2021/02/07 12:52:20 by saoki            ###   ########.fr       */
+/*   Updated: 2021/02/07 15:31:45 by saoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		get_next_line(int fd, char **line)
 	char		*temp;
 	int			read_num;
 
-	if (fd < 0 || MAX_FD <= fd || line == NULL)
+	if (fd < 0 || MAX_FD < fd || line == NULL)
 		return (-1);
 	temp = NULL;
 	while (1)
@@ -45,7 +45,7 @@ char	*ft_read_char(int fd, char **remainder, int *read_num)
 {
 	char	*buf;
 
-	if (remainder == NULL)
+	if (remainder == NULL || BUFFER_SIZE >= INT_MAX || BUFFER_SIZE <= INT_MIN)
 		return (NULL);
 	if (*remainder == NULL)
 	{

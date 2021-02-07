@@ -6,7 +6,7 @@
 /*   By: saoki <saoki@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/06 06:03:40 by saoki             #+#    #+#             */
-/*   Updated: 2021/02/06 23:17:09 by saoki            ###   ########.fr       */
+/*   Updated: 2021/02/07 15:28:19 by saoki            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
+# include <limits.h>
 
 # define MAX_FD 256
 
